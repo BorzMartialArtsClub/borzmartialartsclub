@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martial Arts Club</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Welcome to Our Martial Arts Club</h1>
+    
+    <h2>Register Here</h2>
+    <form id="registration-form">
+        <!-- Personal Information -->
+        <input type="text" name="full_name" placeholder="Full Name" required>
+        <input type="date" name="date_of_birth" placeholder="Date of Birth" required>
+        <input type="text" name="gender" placeholder="Gender" required>
+        <input type="text" name="address" placeholder="Address" required>
+        <input type="tel" name="phone_number" placeholder="Phone Number" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+        
+        <!-- Emergency Contact Information -->
+        <input type="text" name="emergency_contact_name" placeholder="Emergency Contact Name" required>
+        <input type="text" name="emergency_contact_relationship" placeholder="Relationship" required>
+        <input type="tel" name="emergency_contact_phone" placeholder="Emergency Contact Phone" required>
+        
+        <!-- Medical Information -->
+        <input type="text" name="medical_conditions" placeholder="Medical Conditions">
+        <input type="text" name="allergies" placeholder="Allergies">
+        <input type="text" name="doctor_name" placeholder="Doctor's Name">
+        <input type="tel" name="doctor_contact" placeholder="Doctor's Contact">
+        <input type="text" name="insurance_info" placeholder="Insurance Information">
+        
+        <!-- Membership Details -->
+        <input type="text" name="membership_type" placeholder="Membership Type" required>
+        <input type="text" name="preferred_class_times" placeholder="Preferred Class Times" required>
+        <input type="text" name="previous_experience" placeholder="Previous Experience">
+        <input type="text" name="goals" placeholder="Goals and Expectations">
+        
+        <!-- Waiver and Consent -->
+        <label><input type="checkbox" name="waiver_signed" required> Liability Waiver Acknowledgement</label>
+        <label><input type="checkbox" name="consent_signed" required> Consent to Treatment</label>
+        
+        <button type="submit">Register</button>
+    </form>
+
+    <h2>Update Fees</h2>
+    <form id="fee-update-form">
+        <input type="number" name="member_id" placeholder="Member ID" required>
+        <input type="number" name="amount" placeholder="Amount Paid" required>
+        <input type="text" name="payment_method" placeholder="Payment Method" required>
+        <button type="submit">Update Fees</button>
+    </form>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
